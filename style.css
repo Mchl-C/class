@@ -285,3 +285,103 @@ nav a:hover {
   border-radius: 10px;
 }
 
+/* ======================================================================= */
+/* Quotes */
+.quote-section {
+  background-color: #D3D3D3;         /* Soft background */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.quote {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.2em;
+  font-family: 'Playfair Display', serif; /* Elegant font */
+  font-style: italic;
+  color: #1e4461;                    /* Deep blue tone */
+  line-height: 1.6;
+  border-left: 5px solid #f7dc6f;    /* Stylish accent */
+  padding-left: 20px;
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+  border-radius: 10px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  /* Navigation */
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .separator {
+    display: none; /* hide the "|" on small screens */
+  }
+
+  /* Cover title */
+  .cover-title {
+    font-size: 1.8em;
+    padding: 10px 20px;
+  }
+
+  /* Highlight section */
+  .container img {
+    width: 80vw;
+    height: auto;
+  }
+
+  .highlight h2 {
+    font-size: 2em;
+  }
+
+  /* Info section */
+  .info-box {
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    gap: 10px;
+  }
+
+  .info-text h2 {
+    font-size: 2em;
+  }
+
+  .info-text p {
+    font-size: 1em;
+  }
+
+  .info-image img {
+    width: 100%;
+  }
+
+  /* Quote section */
+  .quote {
+    font-size: 1em;
+    padding: 15px;
+  }
+
+  /* Text slide */
+  .text-slide {
+    padding: 40px 20px;
+  }
+
+  .text-slide h2 {
+    font-size: 1.8em;
+  }
+
+  .text-slide b {
+    font-size: 1.2em;
+  }
+
+  /* Audio button */
+  .audio-button {
+    top: 10px;
+    right: 10px;
+    padding: 8px;
+    font-size: 18px;
+  }
+}
