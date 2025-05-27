@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width">
+
+	<link rel = "stylesheet" href = "style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
+	<title> XII MIA 3 </title>
+</head>
+<body>
+	<header>
+		<nav>
+			<a href = "main.html"> Home </a> <span class = "separator"> | </span>
+			<a href = "pictures.html"> Pictures </a> <span class = "separator"> | </span>
+			<a href = "members"> Members </a> <span class = "separator"> | </span>
+			<a href = "docs"> Documentaries </a>
+		</nav>
+	</header>
+	
+	<div class="cover-container">
+	    <img src="class_2.jpg" class="cover">
+	    <div class="overlay"></div>
+	    <h1 class="cover-title"> FERVENT </h1>
+	</div>
+
+	<br> </br>
+
+	<section class="highlight">
+	 	<h2 class="highlight-title">Highlight</h2>
+		<div class="container" id="highlight-container"></div>
+
+		<!-- Modal -->
+		<div id="modal" class="modal">
+			<span class="close">&times;</span>
+			<img class="modal-content" id="modal-img">
+		</div>
+	</section>
+
+
+	<audio controls autoplay id = "bg-audio">
+		<source src = "audio/17.mp3">
+	</audio>
+
+	<button class="audio-button" onclick="toggleAudio()"> 🔊 </button>
+
+	<section class="Info anchor">
+		<div class="cover-container">
+	    	<img src="class.jpg" class="cover">
+	    	<div class="overlay"></div>
+	    </div>
+	
+		<div class="info-box">
+    		<div class="info-text">
+    			<h2>XII MIA 3</h2>
+    			<p>
+    				A class filled with brilliant minds and wonderful people. We've shared countless memories, laughter, and dreams.
+    			</p>
+    		</div>
+    		<div class="info-image">
+    			<img src="photos/img_3.jpg" alt="class moment">
+    		</div>
+    	</div>
+	</section>
+
+	<section class="text-slide">
+		<h2>A few words...</h2>
+		<p>Looking back, every moment mattered. From late-night projects to spontaneous class jokes, those moments will live forever in our memories.</p>
+		<p>Thank you for each and everyone of you, it's a pleasure to have met ya'all</p>
+		<p>I wish you all the best for days to come, stay young, stay bold, stay <b> FERVENT! </b></p>
+	</section>
+
+	<section class="quote-section">
+		<blockquote class="quote">
+			“You should pierce through the mist of knowledge and prove to the world that you are the one this world desperately needs.” - Frederich, Class monitor
+		</blockquote>
+	</section>
+
+	<script src = "script.js"> </script>
+
+</body>
+</html>

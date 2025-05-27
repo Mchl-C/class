@@ -1,0 +1,287 @@
+body {
+    background-color: #202020;
+   	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*{
+	font-family : "Times new roman";
+	color : white;
+	font-size 	: 16;
+}
+
+header {
+    background-color:   #202020;
+    padding: 5px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #36454F;
+    color: #212f3d;
+    border-radius: 15%;
+}
+
+.body{
+    background-color    : #202020;
+    height              : 80vh;
+}
+
+/* ======================================================================= */
+/* Audio */
+#bg-audio {
+    display: none; /* hides the default audio player */
+}
+
+.audio-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+/* ======================================================================= */
+/* Cover page */
+.separator {
+    color: white;
+    font-size : 1.8em;
+    pointer-events: none; 
+    user-select: none;
+}
+
+.cover-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display : block;
+}
+
+.cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* semi-transparent black */
+}
+
+.cover-title {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    color : #2e4053;
+    background-color: rgba(255, 255, 255, 0.7); /* black with 50% transparency */
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+/* ======================================================================= */
+/* Words */
+/* ======================================================================= */
+/* Highlight section */
+.highlight{
+    background-color: #D3D3D3;
+    height: 50%;
+}
+
+.container > div {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px;
+}
+
+.container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px;
+    scroll-behavior: smooth;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.container img {
+    flex: 0 0 auto;
+    width: 30%;
+    height: auto;
+    margin: 10px;
+    object-fit: cover;
+    aspect-ratio: 4 / 3;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.highlight h2 {
+    display : block;
+    font-family: 'Playfair Display', serif;  /* Elegant and classy */
+    font-size: 3em;
+    color: #000000;
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    position: relative;
+}
+
+.highlight h2::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: #101010;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Highlight preview */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+  display: block;
+  margin: auto;
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 10px;
+  box-shadow: 0 0 20px black;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ======================================================================= */
+/* Info slide */
+.anchor{
+    position: relative;
+}
+
+.info-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    background: rgba(32, 32, 32, 0.9);
+    display: flex;
+    gap: 20px;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.info-text {
+    flex: 1;
+    font-family: 'Playfair Display', serif;
+    color: #1e5242;
+}
+
+.info-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.info-text p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.info-image {
+    flex: 1;
+}
+
+.info-image img {
+    width: 75%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.text-slide {
+  background-color: #1e5242;
+  color: white;
+  padding: 80px 40px;
+  font-family: 'Georgia', serif;
+  text-align: center;
+}
+
+.text-slide h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.text-slide b{
+    font-size: 1.5em;
+}
+
+/* ======================================================================= */
+/* Quotes */
+.quote-section {
+  background-color: #D3D3D3;         /* Soft background */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.quote {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.2em;
+  font-family: 'Playfair Display', serif; /* Elegant font */
+  font-style: italic;
+  color: #1e4461;                    /* Deep blue tone */
+  line-height: 1.6;
+  border-left: 5px solid #f7dc6f;    /* Stylish accent */
+  padding-left: 20px;
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+  border-radius: 10px;
+}
+
