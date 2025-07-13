@@ -1,8 +1,160 @@
 <!DOCTYPE html>
 <html lang = "en">
-<head>
-	<meta charset = "utf-8">
-	<meta name = "viewport" content = "width=device-width">
-</head>
+	<head>
+		<meta charset = "utf-8">
+		<meta name = "viewport" content = "width=device-width">
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand:wght@400..700&family=Manufacturing+Consent&display=swap" rel="stylesheet">
+
+		<title> Pictures </title>
+		
+		<style>
+			header{
+				flex: 1;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background-color: rgb(64,64,64);
+			}
+
+			.screen{
+				display: flex;
+				flex-direction: column;
+				background-color: rgb(240,240,240);
+			}
+
+			.left-header, .right-header{
+				flex: 1;
+			}
+
+			.middle-header{
+				flex: 3;
+				display: flex;
+				justify-content: center;
+			}
+			.title{
+				font-family: "Edu VIC WA NT Hand", cursive;
+				color: rgb(250,250,250);
+				font-size: 3em;
+				margin: 0;
+			}
+			
+			.back{
+				background-color: rgb(200, 150, 125);
+				width: 50px;
+				height: 50px;
+				margin-left: 20px;
+				transition: background-color .15s;
+			}
+
+			.back:hover{
+				background-color: rgb(160, 110, 85);
+			}
+
+			.container-y{
+				flex: 4;
+				margin-top: 15px;
+				display: flex;
+				flex-direction: column;
+				gap: 20px;
+			}
+
+			.container-x{
+				display: flex;
+				justify-content: space-evenly;
+			}
+			.sample-box{
+				background-color: lightblue;
+				position: relative;
+				width: 200px;
+				height: 200px;
+				margin-right: 15px;
+				border: none;
+				box-shadow: 0 0 5px rgba(0,0,0,.1);
+				border-radius: 30px;
+			}
+
+			.animated-object{
+				background-color: turquoise;
+				width: 20px;
+				height: 20px;
+				border-radius: 100%;
+				border: none;
+				position: absolute;
+				bottom: -10px;
+				left: 90px;
+				
+				animation: trap 2s ease .5s infinite	;
+			}
+
+			@keyframes trap{
+				0%{
+					background-color: turquoise;
+					bottom: -10px;
+					left: 100px;
+					transform: translate(0px, 0px) scale(1.5);
+				}
+				25%{
+					background-color: magenta;
+					transform: translate(-110px, -100px) scale(.5);
+				}
+				50%{
+					background-color: turqoise;
+					transform: translate(0px, -200px) scale(1.5);
+				}
+				75%{
+					background-color: magenta;
+					transform: translate(100px, -100px) scale(.5);
+				}
+				100%{
+					background-color: turquoise;
+					transform: translate(0, 0) scale(1.5);
+				}
+			}
+		</style>
+	</head>
+
+	<body class = "screen">
+		<header> 
+			<div class = "left-header">
+				<a href = "index.html">
+					<button class = "back"> <= </button>
+				</a>
+			</div>
+			<div class = "middle-header">
+				<p class = "title"> Album </p>
+			</div>
+			<div class = "right-header">
+			</div>
+		</header>
+
+		<main class = "container-y">
+			<div class = "container-x">
+				<div class = "sample-box"> 
+					<div class = "animated-object"></div>
+				</div>
+				<div class = "sample-box"> </div>
+				<div class = "sample-box"> </div>
+				<div class = "sample-box"> </div>
+				<div class = "sample-box"> </div>
+			</div>
+			<div class = "container-x">
+				<div class = "sample-box"> </div>
+				<div class = "sample-box"> </div>
+				<div class = "sample-box"> </div>
+				<div class = "sample-box"> </div>
+				<div class = "sample-box"> </div>
+			</div>
+			<div class = "container-x">
+				<div class = "sample-box"> </div>
+				<div class = "sample-box"> </div>
+				<div class = "sample-box"> </div>
+				<div class = "sample-box"> </div>
+				<div class = "sample-box"> </div>
+			</div>
+		</main>
+	</body>
 
 </html>
